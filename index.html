@@ -141,7 +141,7 @@
         </div>
 
         <!-- Tarjeta Central de Portada -->
-        <div class="bg-black border-2 border-gold-400 rounded-3xl p-8 sm:p-10 max-w-sm w-full mx-auto relative z-10 my-auto space-y-5">
+        <div class="bg-[#0c1a4d] border-2 border-gold-400 rounded-3xl p-8 sm:p-10 max-w-sm w-full mx-auto relative z-10 my-auto space-y-5">
             
             <div class="space-y-2">
                 <p class="font-serif text-[11px] sm:text-xs uppercase tracking-[0.4em] text-champagne-300 font-medium">
@@ -520,7 +520,7 @@
             const hearts = Array.from({ length: 40 }, () => ({
                 x: Math.random() * canvas.width,
                 y: Math.random() * canvas.height,
-                size: Math.random() * 12 + 10,
+                size: Math.random() < 0.3 ? Math.random() * 20 + 28 : Math.random() * 12 + 10,
                 speedY: Math.random() * 1.2 + 0.6,
                 speedX: Math.random() * 0.6 - 0.3,
                 opacity: Math.random() * 0.3 + 0.7,
